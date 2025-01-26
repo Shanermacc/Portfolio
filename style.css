@@ -179,7 +179,14 @@ ul.dashed li::before {
     clear: both;
 }
 
-.home-column {
+.home-column1 {
+    float: left;
+    width: 48.5%;
+    padding: 10px;
+    height: 600px;
+}
+
+.home-column2 {
     float: left;
     width: 48.5%;
     padding: 10px;
@@ -424,16 +431,22 @@ ul.dashed li::before {
         max-width: 400px;
     }
 
-    .home-column {
+    .home-column1 {
         width: 95%;
+        height: 700px;
+    }
+
+    .home-column2 {
+        width: 95%;
+        height: 500px;
     }
 
     .home-row img {
-        width: 450px;
+        width:400px;
     }
 
     .column {
-        height: 500px;
+        height: 600px;
         width: 85%;
     }
 
@@ -449,20 +462,22 @@ ul.dashed li::before {
 
     .projects-column1 {
         width: 100%;
-        height: 370px;
+        height: 300px;
     }
 
     .projects-column2 {
         width: 90%;
+        height: 500px;
     }
 
     .book-column1 {
         width: 100%;
-        height: 370px;
+        height: 300px;
     }
 
     .book-column2 {
         width: 90%;
+        height: 650px;
     }
 
     .center {
