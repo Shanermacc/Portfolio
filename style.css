@@ -422,6 +422,13 @@ ul.dashed li::before {
         font-size: 20px;
     }
 
+    nav ul li {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        margin-right: 40px;
+    }
+
     .text {
         font-size: 30px;
     }
