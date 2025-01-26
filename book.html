@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <title>
+        Shane Maccarone - Typography Book Project
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="logolockup">
+        <div>
+            <img src="images/Geometric Shapes-01.png" alt="..." width="10" height="10" class="square">
+        </div>
+        <h1>SHANE MACCARONE</h1>
+        <div>
+            <img src="images/Geometric Shapes-02.png" alt="..." width="10" height="10" class="triangle">
+        </div>
+    </div>
+    <hr>
+
+    <nav class="stroke">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <a href="projects.html">
+        <button class="button" style="margin-bottom: 15px; margin-left: 5px;">Back</button>
+    </a>
+
+    <div class="book-row">
+        <div class="book-column1">
+            <img src="images/MaccaroneBookCovers.jpg" alt="Invisible Cities">
+        </div>
+
+        <div class="book-column2">
+            <h3 style="text-align: center;">About the Project</h3>
+
+            <p>This was a project I did for my Typography class where I had to design a series of book covers by one author.
+            I was given a list of authors to choose from and I ending up choosing Italo Calvino. Since this assignment was for
+            Typography I had to find a way to make the words and type tell the story without using any graphics. So I really had
+            to think outside the box for this project. </p>
+        </div>
+    </div>
+
+    <div class="book-row">
+        <div class="book-column2">
+            <h3 style="text-align: center;">Designing the Covers</h3>
+
+            <p>When trying to come up with a design for each of the three covers I really had to look into what the books were about.
+            Once I had an idea on what I wanted to do for each book I designed a first draft in illustrator for the front covers.
+            Then once I found the designs I liked, I then worked on the back cover with a tagline, summary and a review.
+            Then I put the front and back cover into InDesign to create the full version.</p>
+        </div>
+
+        <div class="book-column1">
+            <img src="images/MaccaroneBookCovers_02.jpg" alt="If On a Winter's Night a Traveler">
+        </div>
+    </div>
+
+    <div class="book-row">
+        <div class="book-column1">
+            <img src="images/MaccaroneBookCovers_03.jpg" alt="The Baron in the Trees">
+        </div>
+
+        <div class="book-column2">
+            <h3 style="text-align: center;">Handmade Typography</h3>
+
+            <p>For one of the covers I also had to incorporate some handmade typography. So for The Baron in the Trees cover I made a
+            design in Illustrator, then I used that design to engrave it on a piece of wood. All of this was done using a laser cutter
+            at the TCNJ Makerspace. I then scanned the wood using Adobe Scan to make a PDF file of the wooden cover that I would put into
+            InDesign to make the rest of the book cover.</p>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+    
+    
+    <hr>
+    
+    <footer>
+        <div class="links-flex">
+            <a class="External" href="https://www.linkedin.com/in/shane-maccarone-b89019293/">
+                <img src="images/LinkedinLogo.png" alt="HTML" style="width: 60px; height: 60px;">
+            </a>
+            <a class="External" href="">
+                <img src="images/ArtstationLogo.png" alt="HTML" style="width: 60px; height: 60px;">
+            </a>
+        </div>
+    </footer>
+    
+    <script>
+        //$("a").attr("target", "_blank");
+        $(".External").attr("target", "_blank");
+    </script>
+    
+    <script src="main.js" charset="UTF-8"></script>
+    
+</body>
+    
+    
+    
+</html>
