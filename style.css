@@ -54,21 +54,23 @@ nav {
     font-style: normal;
     font-size: 30px;
     max-width: 100%;
+    text-align: center;
 }
 
 nav ul {
     margin: 0 auto;
+    list-style: none;
+    padding: 5px 0;
 }
 
 nav ul li {
     display: inline;
-    padding: 150px;
 }
 
 nav ul li a {
-    text-align: center;
     text-decoration: none;
     color: #F1FADA;
+    padding: 0 120px;
 }
 
 nav ul li a,
@@ -88,18 +90,19 @@ nav.stroke ul li a {
 nav.stroke ul li a::after {
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '.';
+    left: 50%;
+    width: 40%;
+    content: '';
     color: transparent;
     background: #F1FADA;
     height: 1px;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    transition: transform 250ms;
 }
 
 nav.stroke ul li a:hover:after {
-    width: 100%;
+    transform: translateX(-50%) scaleX(1);
 }
 
 ul.dashed {
@@ -183,14 +186,14 @@ ul.dashed li::before {
     float: left;
     width: 48.5%;
     padding: 10px;
-    height: 600px;
+    height: 50%;
 }
 
 .home-column2 {
     float: left;
     width: 48.5%;
     padding: 10px;
-    height: 600px;
+    height: 50%;
 }
 
 .home-row::after {
@@ -204,20 +207,21 @@ ul.dashed li::before {
     height: auto;
     border: 6px solid #9AD0C2;
     border-radius: 100%;
-    margin-top: 5%;
+    margin: 1em auto;
+    display: block;
 }
 
 .projects-column1 {
     float: left;
     width: 45%;
-    height: 450px;
+    height: 90%;
 }
 
 .projects-column2 {
     float: left;
     width: 50%;
     padding: 10px;
-    height: 420px;
+    height: 40%;
 }
 
 .projects-row::after {
@@ -229,14 +233,14 @@ ul.dashed li::before {
 .book-column1 {
     float: left;
     width: 50%;
-    height: 520px;
+    height: 90%;
 }
 
 .book-column2 {
     float: left;
     width: 48%;
     padding: 10px;
-    height: 500px;
+    height: 80%;
 }
 
 .book-row::after {
@@ -246,7 +250,7 @@ ul.dashed li::before {
 }
 
 .book-column1 img {
-    width: 92%;
+    width: 82%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -261,9 +265,9 @@ ul.dashed li::before {
 
 .images-column {
     float: left;
-    width: 48%;
+    width: 48.5%;
     padding: 10px;
-    height: 340px;
+    height: 90%;
 }
 
 .images-row::after {
@@ -282,6 +286,12 @@ ul.dashed li::before {
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
+    width: 90%;
+    height: auto;
+    border: 6px solid #9AD0C2;
+    border-radius: 25px;
+    display: block;
+    margin: 1em auto;
 }
 
 .center {
@@ -417,17 +427,19 @@ ul.dashed li::before {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 800px){
     nav {
         font-size: 20px;
     }
-
-    nav ul li {
-        display: block;
-        padding: 10px;
-        text-align: center;
-        margin-right: 40px;
+    
+    nav ul li a {
+        padding: 0 15px;
     }
+
+    nav.stroke ul li a::after {
+        width: 60%;
+    }
+    
 
     .text {
         font-size: 30px;
@@ -440,16 +452,16 @@ ul.dashed li::before {
 
     .home-column1 {
         width: 95%;
-        height: 700px;
+        height: 60%;
     }
 
     .home-column2 {
         width: 95%;
-        height: 500px;
+        height: 45%;
     }
 
     .home-row img {
-        width:400px;
+        width:300px; 
     }
 
     .column {
@@ -458,18 +470,19 @@ ul.dashed li::before {
     }
 
     .images-column {
-        width: 90%;
-        height: 350px;
+        width: 95%;
+        height: 20%;
     }
 
     .kirby-row {
-        width: 90%;
-        display: inline-block;
+        width: 95%;
+        height: 20%;
+        display: block;
     }
 
     .projects-column1 {
         width: 100%;
-        height: 300px;
+        height: 40%;
     }
 
     .projects-column2 {
@@ -479,12 +492,12 @@ ul.dashed li::before {
 
     .book-column1 {
         width: 100%;
-        height: 300px;
+        height: 40%;
     }
 
     .book-column2 {
         width: 90%;
-        height: 650px;
+        height: 65%;
     }
 
     .center {
@@ -494,5 +507,42 @@ ul.dashed li::before {
 
     .images {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*@media only screen and (max-width: 1050px){
+    nav {
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        padding: 0 40px;
+    }
+    
+
+    .home-column1 {
+        width: 85%;
+    }
+
+    .home-column2 {
+        width: 90%;
+    }
+
+    .home-row img {
+        margin-left: 17%;
+    }
+
+    .column {
+        width: 70%;
+    }
+
+    .images-column {
+        width: 95%;
+    }
+
+    .kirby-row {
+        width: 95%;
+        display: block;
+        margin-right: 4%;
     }
 }
