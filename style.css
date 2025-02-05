@@ -169,14 +169,14 @@ ul.dashed li::before {
     gap: 50px;
 }
 
-.column {
+.about-column {
     float: left;
     width: 48.5%;
     padding: 10px;
-    height: 420px;
+    height: 480px;
 }
 
-.row::after {
+.about-row::after {
     content: "";
     display: table;
     clear: both;
@@ -250,13 +250,12 @@ ul.dashed li::before {
 }
 
 .book-column1 img {
-    width: 82%;
+    width: 80%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
     display: block;
     cursor: pointer;
     transition: .5s ease;
+    margin: 1em auto;
 }
 
 .book-column1:hover img {
@@ -464,9 +463,9 @@ ul.dashed li::before {
         width:300px; 
     }
 
-    .column {
-        height: 600px;
-        width: 85%;
+    .about-column {
+        width: 95%;
+        height: 400px;
     }
 
     .images-column {
