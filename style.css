@@ -48,6 +48,14 @@ hr {
     background-color: #9AD0C2;
 }
 
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
 nav {
     font-family: "Jura", sans-serif;
     font-optical-sizing: auto;
@@ -166,7 +174,7 @@ ul.dashed li::before {
 
 .links-flex {
     display: flex;
-    gap: 50px;
+    gap: 45px;
 }
 
 .about-column {
