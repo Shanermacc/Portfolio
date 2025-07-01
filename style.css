@@ -57,77 +57,39 @@ footer {
 }
 
 nav {
-    font-family: "Jura", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 30px;
-    max-width: 100%;
-    text-align: center;
+    place-items: center;
 }
 
 nav ul {
-    margin: 0 auto;
     list-style: none;
-    padding: 5px 0;
-}
-
-nav ul li {
-    display: inline;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #F1FADA;
-    padding: 0 120px;
-}
-
-nav ul li a,
-nav ul li a:after
-nav ul li a:before {
-    transition: all .5s;
-}
-
-nav ul li a:hover {
-    color: #F1FADA;
-}
-
-nav.stroke ul li a {
-    position: relative;
-}
-
-nav.stroke ul li a::after {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 40%;
-    content: '';
-    color: transparent;
-    background: #F1FADA;
-    height: 1px;
-    transform: translateX(-50%) scaleX(0);
-    transform-origin: 50% 50%;
-    transition: transform 250ms;
-}
-
-nav.stroke ul li a:hover:after {
-    transform: translateX(-50%) scaleX(1);
-}
-
-ul.dashed {
-    list-style-type: none;
-}
-
-ul.dashed li {
-    text-indent: -5px;
     font-size: 30px;
-    font-family: "Orbitron", sans-serif;
-    color: #9AD0C2;
-    line-height: 1.6;
+    font-family: "Jura", sans-serif;
+    display: block;
+    position: relative;
+    margin: 0 60px;
 }
 
-ul.dashed li::before {
-    content: "-";
-    text-indent: -5px;
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #F1FADA;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }
 
 video {
