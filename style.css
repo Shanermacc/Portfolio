@@ -56,6 +56,12 @@ footer {
     align-items: center;
 }
 
+ul li {
+    color: #9AD0C2;
+    font-family: "Orbitron", sans-serif;
+    font-size: 30px;
+}
+
 nav {
     place-items: center;
 }
@@ -120,14 +126,6 @@ video {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.square,
-.triangle {
-    width: 100%;
-    max-width: 60px;
-    min-width: 30px;
-    height: auto;
 }
 
 .flex-layout {
@@ -204,26 +202,26 @@ video {
     clear: both;
 }
 
-.book-column1 {
+.all-column1 {
     float: left;
     width: 50%;
     height: 90%;
 }
 
-.book-column2 {
+.all-column2 {
     float: left;
     width: 48%;
     padding: 10px;
     height: 80%;
 }
 
-.book-row::after {
+.all-row::after {
     content: "";
     display: table;
     clear: both;
 }
 
-.book-column1 img {
+.all-column1 img {
     width: 80%;
     height: auto;
     display: block;
@@ -232,34 +230,8 @@ video {
     margin: 1em auto;
 }
 
-.book-column1:hover img {
+.all-column1:hover img {
     opacity: .5;
-}
-
-.tune-column1 {
-    float: left;
-    width: 50%;
-    height: 90%;
-}
-
-.tune-column2 {
-    float: left;
-    width: 48%;
-    padding: 10px;
-    height: 80%;
-}
-
-.tune-column1 img {
-    width: 80%;
-    height: auto;
-    display: block;
-    margin: 1em auto;
-}
-
-.tune-row::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .images-column {
@@ -428,23 +400,20 @@ video {
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 800px){
-    nav {
-        font-size: 20px;
-    }
-    
     nav ul li a {
-        padding: 0 15px;
-    }
-
-    nav.stroke ul li a::after {
-        width: 60%;
+        font-size: 20px;
+        margin: 0 25px;
     }
 
     video {
         width: 100%;
     }
-    
 
+    .button {
+        font-size: 15px;
+        padding: 8px 20px;
+    }
+    
     .text {
         font-size: 30px;
     }
@@ -486,7 +455,7 @@ video {
 
     .projects-column1 {
         width: 100%;
-        height: 40%;
+        height: 220px;
     }
 
     .projects-column2 {
@@ -494,22 +463,12 @@ video {
         height: 500px;
     }
 
-    .book-column1 {
+    .all-column1 {
         width: 100%;
         height: 40%;
     }
 
-    .book-column2 {
-        width: 90%;
-        height: 65%;
-    }
-
-    .tune-column1 {
-        width: 100%;
-        height: 40%;
-    }
-
-    .tune-column2 {
+    .all-column2 {
         width: 90%;
         height: 65%;
     }

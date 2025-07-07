@@ -24,109 +24,120 @@
 </head>
 
 <body>
-    <div class="logolockup">
-        <div>
-            <img src="images/Geometric Shapes-01.png" alt="..." width="10" height="10" class="square">
+    <header>
+        <div class="logolockup">
+            <div>
+                <img src="images/Geometric Shapes-01.png" 
+                     alt="..." 
+                     width="60px">
+            </div>
+
+            <h1>SHANE MACCARONE</h1>
+
+            <div>
+                <img src="images/Geometric Shapes-02.png" 
+                     alt="..." 
+                     width="60px">
+            </div>
         </div>
-        <h1>SHANE MACCARONE</h1>
-        <div>
-            <img src="images/Geometric Shapes-02.png" alt="..." width="10" height="10" class="triangle">
-        </div>
-    </div>
+
+        <hr>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <hr>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-        </ul>
-    </nav>
+    <main>
+        <a href="projects.html">
+            <button class="button" style="margin-bottom: 15px; margin-left: 5px;">Back</button>
+        </a>
 
-    <hr>
+        <div class="all-row">
+            <div class="all-column1">
+                <img src="images/TuneIn_AppIcon.png" alt="App Icon">
+            </div>
 
-    <a href="projects.html">
-        <button class="button" style="margin-bottom: 15px; margin-left: 5px;">Back</button>
-    </a>
+            <div class="all-column2">
+                <h3 style="text-align: center;">About the Project</h3>
 
-    <div class="tune-row">
-        <div class="tune-column1">
-            <img src="images/TuneIn_AppIcon.png">
+                <p>TuneIn is an app that I designed for my UI/UX class. The purpose of the app is for users to rate and review TV shows and bring a community of TV lovers together. The app is heavily inspired by apps like Letterboxd and was fully designed using Figma where I incorporated a lot of micro interactions and animations. I also had to apply some research methods for this project like the SUS Form and user personas.</p>
+            </div>
         </div>
 
-        <div class="tune-column2">
-            <h3 style="text-align: center;">About the Project</h3>
+        <div class="all-row">
+            <div class="all-column2">
+                <h3 style="text-align: center;">Prototyping</h3>
 
-            <p>TuneIn is an app that I designed for my UI/UX class. The purpose of the app is for users to rate and review TV shows and bring a community of TV lovers together. The app is heavily inspired by apps like Letterboxd and was fully designed using Figma where I incorporated a lot of micro interactions and animations. I also had to apply some research methods for this project like the SUS Form and user personas.</p>
-        </div>
-    </div>
+                <p>Since this project was designed using Figma, I had to do some prototyping. Even though I had an idea on what the app was going to look like, I still made some digital sketches and prototypes. I also made a sitemap so I could a sense on how the app would be laid out. After all of that, I finally started to put the project together and apply micro interactions</p>
+            </div>
 
-    <div class="tune-row">
-        <div class="tune-column2">
-            <h3 style="text-align: center;">Prototyping</h3>
-
-            <p>Since this project was designed using Figma, I had to do some prototyping. Even though I had an idea on what the app was going to look like, I still made some digital sketches and prototypes. I also made a sitemap so I could a sense on how the app would be laid out. After all of that, I finally started to put the project together and apply micro interactions</p>
+            <div class="all-column1">
+                <img src="images/sitemap.jpg" alt="Sitemap">
+            </div>
         </div>
 
-        <div class="tune-column1">
-            <img src="images/sitemap.jpg">
+        <div class="all-row">
+            <div class="all-column1">
+                <img src="images/TuneIn_Idenity-01.jpg" alt="Identity">
+            </div>
+
+            <div class="all-column2">
+                <h3 style="text-align: center;">Visual Identity</h3>
+
+                <p>When coming up with the identity of the app I wanted to go with a chill, vibrant type of style. I went with a color palette that matched that style and I also designed a logo for the app as well. For the font choice, I wanted to have the font on the logo be a retro, 80s type of font and with the rest I just went with a sans serif font in Sonar Sans.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="tune-row">
-        <div class="tune-column1">
-            <img src="images/TuneIn_Idenity-01.jpg">
+        <div class="all-row">
+            <h3 style="text-align: center;">Video Demo</h3>
+
+            <video class="center" controls>
+                <source src="videos/TuneIn - Google Chrome 2025-05-14 14-23-13.mp4" type="video/mp4">
+            </video>
         </div>
 
-        <div class="tune-column2">
-            <h3 style="text-align: center;">Identity</h3>
-
-            <p>When coming up with the identity of the app I wanted to go with a chill, vibrant type of style. I went with a color palette that matched that style and I also designed a logo for the app as well. For the font choice, I wanted to have the font on the logo be a retro, 80s type of font and with the rest I just went with a sans serif font in Sonar Sans.</p>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
         </div>
-    </div>
-
-    <div class="tune-row">
-        <h3 style="text-align: center;">Video Demo</h3>
-
-        <video class="center" controls>
-            <source src="videos/TuneIn - Google Chrome 2025-05-14 14-23-13.mp4" type="video/mp4">
-        </video>
-    </div>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
-    </div>
-    
+    </main>
     
     <hr>
     
     <footer>
         <p>&copy;2025</p>
+        
         <div class="links-flex">
-            <a class="External" href="https://www.linkedin.com/in/shane-maccarone-b89019293/">
-                <img src="images/LinkedinLogo.png" alt="HTML" style="width: 50px; height: 50px;">
+            <a href="https://www.linkedin.com/in/shane-maccarone-b89019293/" target="_blank">
+                <img src="images/LinkedinLogo.png" 
+                     alt="linkedin" 
+                     style="width: 50px; height: 50px;">
             </a>
-            <a class="External" href="https://www.artstation.com/shanermacc11">
-                <img src="images/ArtstationLogo.png" alt="HTML" style="width: 50px; height: 50px;">
+
+            <a href="https://www.artstation.com/shanermacc11" target="_blank">
+                <img src="images/ArtstationLogo.png" 
+                     alt="artstation" 
+                     style="width: 50px; height: 50px;">
             </a>
-            <a class="External" href="mailto:shanermacc892@gmail.com">
-                <img src="images/mail.png" alt="HTML" style="width: 60px; height: 55px;">
+
+            <a href="mailto:shanermacc892@gmail.com" target="_blank">
+                <img src="images/mail.png" 
+                     alt="gmail" 
+                     style="width: 60px; height: 55px;">
             </a>
         </div>
-    </footer>
-    
-    <script>
-        //$("a").attr("target", "_blank");
-        $(".External").attr("target", "_blank");
-    </script>
+    </footer>  
     
     <script src="main.js" charset="UTF-8"></script>
     
 </body>
-    
-    
-    
 </html>
