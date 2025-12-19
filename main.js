@@ -1,3 +1,4 @@
+//MODAL
 var modal = document.getElementById("myModal");
 var span = $(".close");
 
@@ -25,3 +26,14 @@ for (i = 0; i < images.length; i++) { // looping through all image tag names in 
 }
 
 //opacity of image on hover is changing in modal
+
+//SWIPER
+let swiper = new Swiper(".mySwiper", {   
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});
