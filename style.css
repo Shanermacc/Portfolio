@@ -1,10 +1,10 @@
 body {
-    background-color: #265073;
+    background-color: #EEEEEE;
 }
 
 
 h1 {
-    color: #9AD0C2;
+    color: #1B5E51;
     text-align: center;
     font-family: "Zen Tokyo Zoo", system-ui;
     font-weight: 400;
@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-    color: #9AD0C2;
+    color: #1B5E51;
     text-align: left;
     margin-left: 3%;
     font-family: "Orbitron", sans-serif;
@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-    color: #9AD0C2;
+    color: #1B5E51;
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -32,7 +32,7 @@ h3 {
 }
 
 p {
-    color: #9AD0C2;
+    color: #1B5E51;
     font-family: "Jura", sans-serif;
     line-height: 1.5;
     font-optical-sizing: auto;
@@ -44,8 +44,8 @@ p {
 hr {
     height: 3px;
     border-width: 0;
-    color: #9AD0C2;
-    background-color: #9AD0C2;
+    color: #1B5E51;
+    background-color: #1B5E51;
 }
 
 footer {
@@ -57,7 +57,7 @@ footer {
 }
 
 ul li {
-    color: #9AD0C2;
+    color: #1B5E51;
     font-family: "Orbitron", sans-serif;
     font-size: 30px;
 }
@@ -75,7 +75,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #F1FADA;
+    color: #5EAD7E;
     font-size: 30px;
     font-family: "Jura", sans-serif;
     display: block;
@@ -90,7 +90,7 @@ nav ul li a::after {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #F1FADA;
+    background-color: #5EAD7E;
     transition: width 0.3s ease;
 }
 
@@ -133,6 +133,7 @@ a:hover {
     transform: translateX(-50%);
     color: white;
     background-color: rgba(0,0,0,0.6);
+    font-family: "Orbitron", sans-serif;
     font-size: 1.6em;
 }
 
@@ -149,8 +150,8 @@ div.swiper-pagination {
 .button {
     border: none;
     border-radius: 25px;
-    background-color: #9AD0C2;
-    color: black;
+    background-color: #6FCF97;
+    color: #1B5E51;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -162,7 +163,7 @@ div.swiper-pagination {
 
 .button:hover
  {
-    background-color: #8CBAAD;
+    background-color: #5EAD7E;
     transition: .5 ease;
  }
 
@@ -183,6 +184,11 @@ div.swiper-pagination {
 .links-flex {
     display: flex;
     gap: 45px;
+}
+
+.links-flex img {
+    width: 50px;
+    height: 50px;
 }
 
 .about-column {
@@ -221,7 +227,7 @@ div.swiper-pagination {
 .home-row img {
     width: 500px;
     height: auto;
-    border: 6px solid #9AD0C2;
+    border: 6px solid #1B5E51;
     border-radius: 100%;
     margin: 1em auto;
     display: block;
@@ -297,7 +303,7 @@ div.swiper-pagination {
     backface-visibility: hidden;
     width: 90%;
     height: auto;
-    border: 6px solid #9AD0C2;
+    border: 6px solid #1B5E51;
     border-radius: 25px;
     display: block;
     margin: 1em auto;
@@ -334,7 +340,7 @@ div.swiper-pagination {
 }
 
 .text {
-    color: #9AD0C2;
+    color: #1B5E51;
     font-family: "Orbitron", sans-serif;
     font-size: 75px;
 }

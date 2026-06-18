@@ -12,7 +12,7 @@ span.on("click", function() {
 
 // Get all images and insert the clicked image inside the modal
 // Get the content of the image description and insert it inside the modal image caption
-var images = document.getElementsByTagName("img");
+var images = document.getElementsByClassName("modal-image");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 var i;
