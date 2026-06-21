@@ -173,6 +173,10 @@ div.swiper-pagination {
     align-items: center;
 }
 
+.shapes img {
+    width: 120px;
+}
+
 .flex-layout {
     display: flex;
     gap: 70px;
@@ -480,6 +484,10 @@ div.swiper-pagination {
     .home-row img {
         width:300px; 
     }
+
+    .shapes img {
+        width: 90px;
+    }   
 
     .about-column {
         width: 95%;
